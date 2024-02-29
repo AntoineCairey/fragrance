@@ -13,7 +13,7 @@ function Product() {
     const getProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3310/api/parfums/${id}`
+          `${import.meta.env.VITE_BACKEND_URL}/api/parfums/${id}`
         );
         setProduct(response.data);
       } catch (err) {

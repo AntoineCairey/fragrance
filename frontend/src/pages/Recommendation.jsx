@@ -14,7 +14,7 @@ function Recommendation() {
     const getRecoUser = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:3310/api/recos",
+          `${import.meta.env.VITE_BACKEND_URL}/api/recos`,
           body
         );
         setGetReco(response.data);

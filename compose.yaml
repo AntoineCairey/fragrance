@@ -9,9 +9,11 @@ services:
     restart: unless-stopped
     tty: true
     volumes:
-      - ./frontend:/srv/app
+      - ./frontend/src:/srv/app/src
     ports:
       - "5173:5173"
+    environment:
+      VITE_BACKEND_URL: ${VITE_BACKEND_URL}
   
   backend:
     build: ./backend
@@ -30,6 +32,7 @@ services:
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: ${DB_NAME}
+      FRONTEND_URL: ${FRONTEND_URL}
     
   database:
     image: mysql
@@ -42,7 +45,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-uroot", "-prootpassword"] # Command to check health.
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "database", "-uroot", "-prootpassword"] # Command to check health.
       interval: 5s # Interval between health checks.
       timeout: 5s # Timeout for each health checking.
       retries: 20 # How many times retries.

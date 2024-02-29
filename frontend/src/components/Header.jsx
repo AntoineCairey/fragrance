@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
-import Mer from "../assets/Mer.png";
-import Fleur from "../assets/Fleur.png";
+import Mer from "../assets/mer.png";
+import Fleur from "../assets/fleur.png";
 import Group from "../assets/Group.png";
 import Fragrance from "../assets/Fragrance.png";
 
