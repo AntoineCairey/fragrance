@@ -26,13 +26,14 @@ const app = express();
 // For example: ["http://mysite.com", "http://another-domain.com"]
 
 const cors = require("cors");
+app.use(cors());
 
-app.use(
+/* app.use(
   cors({
     origin: [process.env.FRONTEND_URL],
   })
 );
-
+ */
 /* ************************************************************************* */
 
 // Request Parsing: Understanding the purpose of this part
