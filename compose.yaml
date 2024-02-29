@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./frontend
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./frontend:/srv/app
+    ports:
+      - "5173:5173"
+  
+  backend:
+    build: ./backend
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./backend:/srv/app
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+    
+  database:
+    image: mysql
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-uroot", "-prootpassword"] # Command to check health.
+      interval: 5s # Interval between health checks.
+      timeout: 5s # Timeout for each health checking.
+      retries: 20 # How many times retries.
+      start_period: 10s
+
+volumes:
+  db_data:
