@@ -20,7 +20,7 @@ function Home() {
         <img src={fragrance} alt="Logo fragrance" />
       </div>
       <div className="title">
-        <h1>VOTRE PARFUM DE RÊVE, SE TROUVE CHEZ L'ORÉAL</h1>
+        <h1>VOTRE PARFUM DE RÊVE SE TROUVE CHEZ L'ORÉAL</h1>
       </div>
       <Link to="/gender">
         <div className="btn">
@@ -38,7 +38,7 @@ function Home() {
           style et votre personnalité.
         </p>
       </div>
-      <Footer />;
+      ;
     </>
   );
 }

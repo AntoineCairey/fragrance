@@ -42,7 +42,6 @@ function Recommendation() {
           />
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

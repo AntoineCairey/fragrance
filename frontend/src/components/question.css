@@ -4,7 +4,6 @@
   width: 100%;
   height: 80vh;
   padding-top: 70px;
-  margin-bottom: 100px;
   p {
     font-family: "IBM Plex Mono", monospace;
   }
@@ -37,9 +36,11 @@
 }
 .img {
   position: relative;
-  width: 100%;
-  height: 40vh;
+  width: 375px;
+  height: 360px;
   z-index: 0;
+  object-fit: cover;
+  filter: brightness(100%);
 }
 .reponses {
   color: white;
@@ -47,10 +48,15 @@
   position: relative;
   z-index: 3;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
 }
-.reponses > div {
-  position: relative;
+.boutons {
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  background: transparent;
 }
 .rep1,
 .rep2,
@@ -63,12 +69,12 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  background: transparent;
 }
 
 .rep1 {
-  position: fixed;
-  background: transparent;
-  top: 231px;
+  top: 55px;
   left: 20px;
   font-size: 12px;
   width: 90px;
@@ -76,9 +82,7 @@
 }
 
 .rep2 {
-  position: fixed;
-  background: transparent;
-  top: 179px;
+  top: 5px;
   left: 240px;
   font-size: 17px;
   width: 110px;
@@ -86,16 +90,14 @@
 }
 
 .rep3 {
-  position: fixed;
-  background: transparent;
-  top: 530px;
+  top: 200px;
   left: 140px;
   font-size: 20px;
   width: 150px;
   height: 150px;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .title {
     font-size: 20px;
   }
@@ -118,4 +120,4 @@
     top: 550px;
     left: 640px;
   }
-}
+} */

@@ -13,7 +13,6 @@ function Fruity() {
           nextPage="/oriental"
         />
       </div>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [genre, setGenre] = useState("Neutre");
@@ -10,6 +11,7 @@ function App() {
     <div>
       {/* <div className="app">app</div> */}
       <Outlet context={{ genre, setGenre, prefs, setPrefs }} />
+      <Footer/>
     </div>
   );
 }

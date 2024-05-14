@@ -13,7 +13,6 @@ function Oriental() {
           nextPage="/aromatic"
         />
       </div>
-      <Footer />
     </>
   );
 }

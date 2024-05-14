@@ -45,9 +45,7 @@ function Gender() {
           NEUTRE
         </button>
       </div>
-      <div className="footer-gender">
-        <Footer />
-      </div>
+      <div className="footer-gender"></div>
     </div>
   );
 }

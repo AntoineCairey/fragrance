@@ -63,7 +63,7 @@ function Result() {
           </button>
         </div>
       </Link>
-      <Footer />;
+      ;
     </>
   );
 }

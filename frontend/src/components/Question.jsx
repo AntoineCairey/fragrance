@@ -20,9 +20,8 @@ export default function question({ Titre, title, imgSource, nextPage }) {
       <h1 className="Title">{Titre}</h1>
 
       <div className="reponses">
-        <div>
-          <img className="img" src={imgSource} alt="img-backgroundtest" />
-
+        <img className="img" src={imgSource} alt="img-backgroundtest" />
+        <div className="boutons">
           <button
             type="button"
             className="rep1"

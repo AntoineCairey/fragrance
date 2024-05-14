@@ -13,7 +13,6 @@ function Flowery() {
           nextPage="/fruity"
         />
       </div>
-      <Footer />
     </>
   );
 }

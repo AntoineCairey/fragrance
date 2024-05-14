@@ -13,7 +13,6 @@ function Aromatic() {
           nextPage="/citrus"
         />
       </div>
-      <Footer />
     </>
   );
 }

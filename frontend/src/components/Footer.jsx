@@ -2,17 +2,21 @@ import "./footer.css";
 
 function Footer() {
   return (
+    <>
+    <div className="filler"></div>
     <div className="footer-container">
-      <div className="left-text">
-        {/* <p className="p1">Nous contacter</p> */}
-        <p className="p2">Wild Code School</p>
-        <p className="p3">171 rue Lucien Faure, 33300 Bordeaux</p>
-      </div>
-      <div className="right-text">
-        <h2 className="h21">MADE WITH LOVE BY</h2>
-        <h2 className="h22">TECH CARE</h2>
+      <div className="footer">
+        <div className="left-text">
+          <div>Wild Code School</div>
+          <div>171 Rue Lucien Faure 33300 Bordeaux</div>
+        </div>
+        <div className="right-text">
+          <div>MADE WITH LOVE</div>
+          <div>BY TECH CARE</div>
+        </div>
       </div>
     </div>
+    </>
   );
 }
 

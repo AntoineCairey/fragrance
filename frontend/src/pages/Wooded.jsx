@@ -13,7 +13,6 @@ function Wooded() {
           nextPage="/result"
         />
       </div>
-      <Footer />
     </>
   );
 }

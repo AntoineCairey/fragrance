@@ -39,7 +39,6 @@ function Product() {
           <p className="ha">Senteurs : {product?.senteurs?.join(", ")}</p>
         </div>
       )}
-      <Footer />
     </div>
   );
 }

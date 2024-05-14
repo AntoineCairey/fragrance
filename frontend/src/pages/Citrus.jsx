@@ -13,7 +13,6 @@ function Citrus() {
           nextPage="/wooded"
         />
       </div>
-      <Footer />
     </>
   );
 }

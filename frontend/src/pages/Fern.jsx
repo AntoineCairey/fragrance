@@ -13,7 +13,6 @@ function Fern() {
           nextPage="/flowery"
         />
       </div>
-      <Footer />
     </>
   );
 }
