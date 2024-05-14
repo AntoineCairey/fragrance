@@ -2,9 +2,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import "./gender.css";
 import { useNavigate, useOutletContext } from "react-router-dom";
-import femme from "../assets/Femme.png";
-import homme from "../assets/Homme.png";
-import Footer from "../components/Footer";
 
 function Gender() {
   const navigate = useNavigate();
@@ -17,23 +14,19 @@ function Gender() {
 
   return (
     <div className="container-gender">
-      <img
-        src="./src/assets/Fragrance2.png"
-        alt="logo"
-        className="logo-second"
-      />
+      <img src="./fragrance2.png" alt="logo" className="logo-second" />
       <h1 className="question-gender">QUEL EST VOTRE GENRE ?</h1>
       <div className="flex-gender">
         <img
           onClick={() => handleClick("Femme")}
           className="img-woman"
-          src={femme}
+          src="/femme.png"
           alt=""
         />
         <img
           onClick={() => handleClick("Homme")}
           className="img-man"
-          src={homme}
+          src="/homme.png"
           alt=""
         />
         <button

@@ -56,6 +56,7 @@ img {
 }
 .logo-fragrance img {
   max-width: 50%;
+  max-height: 30vh;
   border: none;
   filter: brightness(90%);
   color: white;

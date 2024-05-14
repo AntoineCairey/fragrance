@@ -2,7 +2,6 @@ import { Link, useOutletContext } from "react-router-dom";
 import "./result.css";
 import RadarChart from "react-svg-radar-chart";
 import "react-svg-radar-chart/build/css/index.css";
-import Footer from "../components/Footer";
 
 function Result() {
   const { prefs } = useOutletContext();
@@ -46,11 +45,7 @@ function Result() {
   return (
     <>
       <div className="result-title">
-        <img
-          src="./src/assets/Fragrance2.png"
-          alt="logo"
-          className="logo-second"
-        />
+        <img src="./fragrance2.png" alt="logo" className="logo-second" />
         <h1 className="result-title-h1">VOTRE PROFIL OLFACTIF</h1>
       </div>
       <div className="radar-chart">

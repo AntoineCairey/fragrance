@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import "./product.css";
 
 function Product() {

@@ -1,6 +1,4 @@
 import Question from "../components/Question";
-import Lavande from "../assets/Lavande.png";
-import Footer from "../components/Footer";
 
 function Aromatic() {
   return (
@@ -9,7 +7,7 @@ function Aromatic() {
         <Question
           title="Au quotidien, vous aimez l'odeur d'un :"
           Titre="CHAMPS DE LAVANDE"
-          imgSource={Lavande}
+          imgSource="/lavande.png"
           nextPage="/citrus"
         />
       </div>

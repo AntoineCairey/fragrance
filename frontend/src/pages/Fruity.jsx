@@ -1,6 +1,4 @@
 import Question from "../components/Question";
-import Fruit from "../assets/Fruit.png";
-import Footer from "../components/Footer";
 
 function Fruity() {
   return (
@@ -9,7 +7,7 @@ function Fruity() {
         <Question
           title="Au quotidien, vous aimez l'odeur d'un :"
           Titre="PANIER DE FRUIT"
-          imgSource={Fruit}
+          imgSource="/fruit.png"
           nextPage="/oriental"
         />
       </div>

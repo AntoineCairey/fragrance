@@ -1,6 +1,4 @@
 import Question from "../components/Question";
-import Chalet from "../assets/Chalet.png";
-import Footer from "../components/Footer";
 
 function Wooded() {
   return (
@@ -9,7 +7,7 @@ function Wooded() {
         <Question
           title="Au quotidien, vous aimez l'odeur d'un :"
           Titre="CHALET EN BOIS"
-          imgSource={Chalet}
+          imgSource="/chalet.png"
           nextPage="/result"
         />
       </div>
